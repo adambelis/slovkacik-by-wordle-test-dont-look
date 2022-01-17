@@ -80,7 +80,8 @@ footer small {
 /* KEYBOARD */
 .keyboard {
 	display: grid;
-	gap: 2px;
+	gap: 1px;
+	padding: 5px 0 8px;
 }
 
 .keyboard a {
@@ -92,7 +93,7 @@ footer small {
 .keyboard .row {
 	display: flex;
 	justify-content: center;
-	gap: 3px;
+	gap: 2px;
 	margin-bottom: 2px;
 }
 
@@ -113,6 +114,7 @@ footer small {
 
 .keyboard .double {
 	width: 3rem;
+	background: #222;
 	/* outline: 1px solid #333; */
 	/* outline-style: inset; */
 }
