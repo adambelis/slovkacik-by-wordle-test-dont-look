@@ -31,6 +31,7 @@
 
 .modal__content a {
 	color: #fff;
+	outline: none;
 }
 
 .modal__content .tile {

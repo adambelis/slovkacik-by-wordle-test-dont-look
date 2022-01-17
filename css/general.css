@@ -6,6 +6,10 @@ body {
 	overflow: hidden;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
 	color: #d8d8d8;
 	font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Open Sans", sans-serif;
@@ -17,6 +21,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+
+	min-height: -webkit-fill-available;
 }
 
 /* HEADER */
