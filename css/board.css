@@ -43,7 +43,7 @@
 }
 
 /* RESPONSIVE */
-@media screen and ((max-height: 600px) or (max-width: 375px)) {
+@media screen and ((max-height: 600px) or (max-width: 414px)) {
 	.tile {
 		width: 3rem;
 		height: 3rem;
