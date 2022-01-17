@@ -43,10 +43,17 @@
 }
 
 /* RESPONSIVE */
-@media screen and ((max-height: 600px) or (max-width: 414px)) {
+@media screen and ((max-height: 640px) or (max-width: 414px)) {
 	.tile {
 		width: 3rem;
 		height: 3rem;
 		line-height: 3rem;
+	}
+}
+
+@media screen and (max-height: 570px) {
+	.keyboard .tile {
+		height: 2.5rem;
+		line-height: 2.5rem;
 	}
 }

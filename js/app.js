@@ -1,11 +1,8 @@
-MicroModal.init();
-
 // DATA
 const maxWordLength = 5;
 const maxTries = 6;
 
 let solution = allWords[(allWords.length * Math.random()) | 0].toLowerCase();
-
 let word = "";
 let tries = 1;
 
@@ -19,7 +16,13 @@ let lettersInRow = {
 	wrong: [],
 };
 
-console.log(solution);
+MicroModal.init({
+	disableFocus: true
+});
+
+// document.querySelector('.show-rules').addEventListener("click", () => {
+// 	MicroModal.show('modal-rules')
+// });
 
 // KEY PRESS
 document.addEventListener("keydown", (event) => {
@@ -67,7 +70,7 @@ const addLetter = (character) => {
 		animateTileBounce(tile);
 	}
 
-	console.log(word);
+	// console.log(word);
 };
 
 // REMOVE LETTER
@@ -163,7 +166,7 @@ const highlightLetters = () => {
 		});
 
 	// aplhabet row in footer
-	document.querySelectorAll(".alphabet .tile").forEach((tile, index) => {
+	document.querySelectorAll(".keyboard .tile").forEach((tile, index) => {
 		let colorClass = "";
 
 		if (lettersInRow.wrong.includes(tile.id)) colorClass = "wrong";
@@ -178,3 +181,20 @@ const highlightLetters = () => {
 function noAccents(str) {
 	return str.normalize("NFD").replace(/\p{Diacritic}/gu, "");
 }
+
+// MOBILE
+const keyboard = document.querySelector('.keyboard');
+keyboard.addEventListener('click', (event) => {
+	if (event.target.nodeName !== 'A') return; // clicked on link?
+	let character = event.target.id;
+
+	if ( character === '↵' ) {
+		submitWord();
+	}
+	else if ( character === '←' ) {
+		removeLetter();
+	}
+	else {
+		addLetter(character);
+	}
+});

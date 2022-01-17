@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
 	<title>SLOVKA (uhádni slovo)</title>
 
@@ -28,7 +28,7 @@
 		<h1>SLOVKA<span class="heart">♥️</span></h1>
 		<p>
 			podľa <a target="_blank" href="https://www.powerlanguage.co.uk/wordle/">wordle</a>.
-			hádaj slovo. <a href="#" data-micromodal-trigger="modal-1">pravidlá</a>.
+			hádaj slovo. <a href="#" data-micromodal-trigger="modal-rules">pravidlá</a>.
 		</p>
 	</header>
 
@@ -78,42 +78,81 @@
 	</main>
 
 	<footer>
-		<section class="alphabet">
-			<div class="tile" id="a">a</div>
-			<div class="tile" id="b">b</div>
-			<div class="tile" id="c">c</div>
-			<div class="tile" id="d">d</div>
-			<div class="tile" id="e">e</div>
-			<div class="tile" id="f">f</div>
-			<div class="tile" id="g">g</div>
-			<div class="tile" id="h">h</div>
-			<div class="tile" id="i">i</div>
-			<div class="tile" id="j">j</div>
-			<div class="tile" id="k">k</div>
-			<div class="tile" id="l">l</div>
-			<div class="tile" id="m">m</div>
-			<div class="tile" id="n">n</div>
-			<div class="tile" id="o">o</div>
-			<div class="tile" id="p">p</div>
-			<div class="tile" id="q">q</div>
-			<div class="tile" id="r">r</div>
-			<div class="tile" id="s">s</div>
-			<div class="tile" id="t">t</div>
-			<div class="tile" id="u">u</div>
-			<div class="tile" id="v">v</div>
-			<div class="tile" id="w">w</div>
-			<div class="tile" id="x">x</div>
-			<div class="tile" id="y">y</div>
-			<div class="tile" id="z">z</div>
+		<section class="keyboard">
+			<div class="row">
+				<a href="#" class="tile" id="q">q</a>
+				<a href="#" class="tile" id="w">w</a>
+				<a href="#" class="tile" id="e">e</a>
+				<a href="#" class="tile" id="r">r</a>
+				<a href="#" class="tile" id="t">t</a>
+				<a href="#" class="tile" id="y">y</a>
+				<a href="#" class="tile" id="u">u</a>
+				<a href="#" class="tile" id="i">i</a>
+				<a href="#" class="tile" id="o">o</a>
+				<a href="#" class="tile" id="p">p</a>
+			</div>
+
+			<div class="row">
+				<a href="#" class="tile" id="a">a</a>
+				<a href="#" class="tile" id="s">s</a>
+				<a href="#" class="tile" id="d">d</a>
+				<a href="#" class="tile" id="f">f</a>
+				<a href="#" class="tile" id="g">g</a>
+				<a href="#" class="tile" id="h">h</a>
+				<a href="#" class="tile" id="j">j</a>
+				<a href="#" class="tile" id="k">k</a>
+				<a href="#" class="tile" id="l">l</a>
+			</div>
+
+			<div class="row">
+				<a href="#" class="tile double enter" id="↵">enter</a>
+				<a href="#" class="tile" id="z">z</a>
+				<a href="#" class="tile" id="x">x</a>
+				<a href="#" class="tile" id="c">c</a>
+				<a href="#" class="tile" id="v">v</a>
+				<a href="#" class="tile" id="b">b</a>
+				<a href="#" class="tile" id="n">n</a>
+				<a href="#" class="tile" id="m">m</a>
+				<a href="#" class="tile double" id="←">⌫</a>
+			</div>
 		</section>
 
+		<!-- <section class="keyboard">
+			<a href="#" class="tile" id="a">a</a>
+			<a href="#" class="tile" id="b">b</a>
+			<a href="#" class="tile" id="c">c</a>
+			<a href="#" class="tile" id="d">d</a>
+			<a href="#" class="tile" id="e">e</a>
+			<a href="#" class="tile" id="f">f</a>
+			<a href="#" class="tile" id="g">g</a>
+			<a href="#" class="tile" id="h">h</a>
+			<a href="#" class="tile" id="i">i</a>
+			<a href="#" class="tile" id="j">j</a>
+			<a href="#" class="tile" id="k">k</a>
+			<a href="#" class="tile" id="l">l</a>
+			<a href="#" class="tile" id="m">m</a>
+			<a href="#" class="tile" id="n">n</a>
+			<a href="#" class="tile" id="o">o</a>
+			<a href="#" class="tile" id="p">p</a>
+			<a href="#" class="tile" id="q">q</a>
+			<a href="#" class="tile" id="r">r</a>
+			<a href="#" class="tile" id="s">s</a>
+			<a href="#" class="tile" id="t">t</a>
+			<a href="#" class="tile" id="u">u</a>
+			<a href="#" class="tile" id="v">v</a>
+			<a href="#" class="tile" id="w">w</a>
+			<a href="#" class="tile" id="x">x</a>
+			<a href="#" class="tile" id="y">y</a>
+			<a href="#" class="tile" id="z">z</a> -->
+		<!-- </section> -->
+
 		<!-- modal -->
-		<section class="modal micromodal-slide" id="modal-1" aria-hidden="false">
-			<!-- <section class="" id="modal-1" aria-hidden="false"> -->
+		<section class="modal micromodal-slide" id="modal-rules" aria-hidden="false">
+			<!-- <section class="" id="modal-rules" aria-hidden="false"> -->
 			<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
-				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-rules-title">
 					<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
-					<article class="modal__content" id="modal-1-content">
+					<article class="modal__content" id="modal-rules-content">
 						<p>
 							Uhádni slovo. Máš 6 pokusov. <br>
 							Zadaj prvý pokus. Písmená sa vyfarbia:
