@@ -121,8 +121,7 @@ footer small {
 	align-items: center;
 	justify-content: center;
 
-	/* rgb(233, 233, 237) */
-	/* rgb(208, 208, 215) */
+	user-select: none;
 }
 
 .keyboard .tile:not(.present, .correct, .wrong, .double) {
@@ -176,7 +175,7 @@ footer small {
 @media only screen and (max-width: 600px),
 	   only screen and (max-device-width: 600px) {
 
-	.keyboard .tile {
+	/* .keyboard .tile {
 		font-size: 1rem;
 		width: 2.5rem;
 		height: 3.5rem;
@@ -188,7 +187,22 @@ footer small {
 
 	.keyboard .enter {
 		font-size: 0.85rem;
+	} */
+
+	.keyboard .tile {
+		font-size: 1rem;
+		width: 2rem;
+		height: 3rem;
 	}
+
+	.keyboard .double {
+		width: 3.75rem;
+	}
+
+	.keyboard .enter {
+		font-size: 0.75rem;
+	}
+
 }
 
 @media only screen and ((max-width: 480px) or (max-height: 700px)),
