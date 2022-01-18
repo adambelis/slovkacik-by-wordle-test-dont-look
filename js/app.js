@@ -1,9 +1,3 @@
-document.getElementById("demo").innerHTML = `
-	Screen Width: ${screen.width}, Screen Height: ${screen.height} <br>
-	Inner Width: ${window.innerWidth}, Inner Height: ${window.innerHeight} <br>
-	Client Width: ${document.documentElement.clientWidth}, Client Height: ${document.documentElement.clientHeight}
-`;
-
 // DATA
 const maxWordLength = 5;
 const maxTries = 6;
