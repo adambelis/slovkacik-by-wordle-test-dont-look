@@ -26,6 +26,9 @@ MicroModal.init({
 
 // KEY PRESS
 document.addEventListener("keydown", (event) => {
+	// de-focus any active element
+	if ("activeElement" in document) document.activeElement.blur();
+
 	if (event.key === "Enter") {
 		submitWord();
 	} else if (event.key === "Backspace") {
@@ -185,7 +188,7 @@ function noAccents(str) {
 // MOBILE
 const keyboard = document.querySelector('.keyboard');
 keyboard.addEventListener('click', (event) => {
-	if (event.target.nodeName !== 'A') return; // clicked on link?
+	if (event.target.nodeName !== 'BUTTON') return; // clicked on link?
 	let character = event.target.id;
 
 	if ( character === '↵' ) {
