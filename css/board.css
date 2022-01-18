@@ -43,13 +43,25 @@
 }
 
 /* RESPONSIVE */
-@media screen and ((max-height: 700px) or (max-width: 480px)),
-	   screen and ((max-device-height: 700px) or (max-device-width: 480px)) {
+@media only screen and ((max-height: 700px) or (max-width: 480px)),
+	   only screen and ((max-device-height: 700px) or (max-device-width: 480px)) {
 
 	.board .tile {
 		width: 3rem;
 		height: 3rem;
 		line-height: 3rem;
-		background: red;
+		background: blue;
+	}
+}
+
+@media only screen
+    and (max-device-width: 480px)
+    and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 2dppx)) {
+
+	.board .tile {
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		background: yellow;
 	}
 }
