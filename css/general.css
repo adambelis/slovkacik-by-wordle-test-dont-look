@@ -104,13 +104,6 @@ footer small {
 	touch-action: manipulation;
 }
 
-.keyboard .correct,
-.keyboard .present,
-.keyboard .wrong {
-	color: white;
-	border: none;
-}
-
 .keyboard .tile {
 	width: 3rem;
 	height: 4rem;
@@ -141,12 +134,16 @@ footer small {
 	background: rgb(208, 208, 215);
 }
 
+.keyboard .tile.correct,
+.keyboard .tile.present,
+.keyboard .tile.wrong {
+	color: white;
+	border: 1px solid rgb(18, 18, 19);
+}
+
 .keyboard .double {
 	width: 6rem;
 	background: rgb(187, 187, 187);
-
-	/* outline: 1px solid white; */
-	/* outline-style: inset; */
 }
 
 .keyboard .enter {
@@ -155,7 +152,7 @@ footer small {
 
 
 /* HEADER */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
 	header h1 {
 		font-size: 1.5rem;
 		letter-spacing: 0.05rem;
@@ -174,7 +171,7 @@ footer small {
 }
 
 /* KEYBOARD */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
 	.keyboard .tile {
 		font-size: 1rem;
 		width: 2.5rem;
@@ -190,7 +187,8 @@ footer small {
 	}
 }
 
-@media screen and ((max-width: 480px) or (max-height: 700px)) {
+@media screen and ((max-width: 480px) or (max-height: 700px)),
+	   screen and ((max-device-width: 480px) or (max-device-height: 700px)) {
 	.keyboard .tile {
 		font-size: 1rem;
 		width: 2rem;
