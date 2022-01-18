@@ -20,10 +20,6 @@ MicroModal.init({
 	disableFocus: true
 });
 
-// document.querySelector('.show-rules').addEventListener("click", () => {
-// 	MicroModal.show('modal-rules')
-// });
-
 // KEY PRESS
 document.addEventListener("keydown", (event) => {
 	// de-focus any active element

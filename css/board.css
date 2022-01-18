@@ -15,12 +15,12 @@
 	font-weight: 900;
 	text-transform: uppercase;
 
-	width: 3.5rem;
-	height: 3.5rem;
-	line-height: 3.5rem;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
 
 	border: 2px solid #565758;
-	box-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 2px #000;
 }
 
 .is-filled {
@@ -43,25 +43,26 @@
 }
 
 /* RESPONSIVE */
-@media only screen and ((max-height: 700px) or (max-width: 480px)),
-	   only screen and ((max-device-height: 700px) or (max-device-width: 480px)) {
+@media only screen and (max-width: 600px) {
+	.board .tile {
+		width: 3.5rem;
+		height: 3.5rem;
+		line-height: 3.5rem;
+	}
+}
 
+@media only screen and ((max-height: 700px) or (max-width: 480px)) {
 	.board .tile {
 		width: 3rem;
 		height: 3rem;
 		line-height: 3rem;
-		background: blue;
 	}
 }
 
-@media only screen
-    and (max-device-width: 480px)
-    and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 2dppx)) {
-
+/* @media only screen and (max-device-width: 480px) and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 2dppx)) {
 	.board .tile {
 		width: 3rem;
 		height: 3rem;
 		line-height: 3rem;
-		background: yellow;
 	}
-}
+} */
