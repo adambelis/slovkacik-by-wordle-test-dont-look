@@ -1,4 +1,5 @@
 const allWords = [
+    "adama",
     "cigar",
     "rebut",
     "sissy",
